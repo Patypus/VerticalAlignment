@@ -1,0 +1,62 @@
+<head>
+    <title>Alignment</title>
+</head>
+<body>
+    <div class="container">
+		<div class="column">
+			<div class="content centre-content">
+				<div class="label">
+					<span>Item one</span>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content centre-content">
+				<div class="label">
+					<span>Item two</span>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content centre-content">
+				<div class="label">
+					<span>Item three</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+		.container {
+			width: 650px;
+		}
+		
+		.column {
+			height: 300px;
+			width: 200px;
+			border: 2px solid red;
+			display: inline-block;
+			margin-right: 5px;
+		}
+		
+		.content {
+			height: 290px;
+			width: 180px;
+			margin: 5px;
+			border: 2px solid blue;
+		}
+		
+		/*
+		 * Centre child items horzintally and vertically
+		 */
+		.centre-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.label {
+			border: 2px solid green;
+			width: 100px;
+		}
+	<style>
+</body>
