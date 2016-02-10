@@ -1,0 +1,44 @@
+<head>
+    <title>Alignment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+		    <div id ="centred-with-auto" class="label auto-margin">
+                <span>Auto margins.</span>
+            </div>
+        </div>
+        <div class="column centre-children">
+            <!-- Inline children only. -->
+                <span>Centre children</span>
+        </div>
+	</div>
+	<style type="text/css">
+		.container {
+			width: 650px;
+		}
+
+        .column {
+			height: 300px;
+			width: 200px;
+			border: 2px solid red;
+			display: inline-block;
+			margin-right: 5px;
+            padding-top: 20px;
+		}
+		
+        .auto-margin {
+            margin: 0 auto;
+        }
+
+        .label {
+			border: 2px solid green;
+			width: 100px;
+
+		}
+
+        .centre-children {
+            text-align: center;
+        }
+	</style>
+</body>
