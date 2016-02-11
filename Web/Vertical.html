@@ -1,0 +1,53 @@
+<head>
+    <title>Vertical Alignment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column centre-children">
+            <!-- Inline children only - for single line. -->
+                <span class="line-height-centre">Line height centred</span>
+        </div>
+        <div class="column positioning-centre-parent">
+            <div class="content positioning-centre-child">
+                <span>Unknown height centre</span>
+            </div>
+        </div>
+	</div>
+	<style type="text/css">
+		.container {
+			width: 650px;
+		}
+
+        .column {
+			height: 300px;
+			width: 200px;
+			border: 2px solid red;
+			display: inline-block;
+			margin-right: 5px;
+            vertical-align: top;
+		}
+		
+        .line-height-centre {
+            height: 300px;
+            line-height: 300px;
+            white-space: nowrap;
+        }
+        
+        .positioning-centre-parent {
+            position: relative
+        }
+
+        .positioning-centre-child {
+            top: 50%;
+            position: absolute;
+            /* This needs to move this up half the height of the parent */
+            transform: translateY(-50%);
+        }
+
+        .content {
+            border: 2px solid green;
+			width: 100px;
+        }
+
+	</style>
+</body>
