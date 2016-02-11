@@ -1,0 +1,65 @@
+<head>
+    <title>Position Alignment</title>
+</head>
+<body>
+    <div class="container">
+		<div class="column">
+			<div class="content position-parent">
+				<div class="label position-child">
+					<span>Item one</span>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content position-parent">
+				<div class="label position-child">
+					<span>Item two</span>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content position-parent">
+				<div class="label position-child">
+					<span>Item three</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+		.container {
+			width: 650px;
+		}
+		
+		.column {
+			height: 300px;
+			width: 200px;
+			border: 2px solid red;
+			display: inline-block;
+			margin-right: 5px;
+		}
+		
+		.content {
+			height: 290px;
+			width: 180px;
+			margin: 5px;
+			border: 2px solid blue;
+		}
+		
+		.position-parent {
+            position: relative;
+		}
+		
+        .position-child {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* Move back by half its own width and height to move the centre of its parent to match its centre */
+            transform: translate(-50%, -50%);
+        }
+
+		.label {
+			border: 2px solid green;
+			width: 100px;
+		}
+	</style>
+</body>
